@@ -23,9 +23,7 @@ void AlphaCorona::initResistance() {
 	if (_color == "red") _resistance = rand() % 15 + 10;
 };
 void AlphaCorona::doDie() {
-	_dna = "";
-	_resistance = 0;
-	_color = "";
+	delete this;
 }
 list <Coronavirus*> AlphaCorona::doClone(AlphaCorona* Al) {
 	_listAlphaCrn.push_back(Al);
