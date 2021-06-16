@@ -14,7 +14,7 @@ AlphaCorona(string dna, int resistance, string color) {
 	AlphaCorona::doDie();
 }
 void AlphaCorona::doBorn() {
-	loadADNInformation();
+	Coronavirus::loadADNInformation()
 	if (m_color(rand() % 2) == 0) { _color = "blue"; }
 	if (m_color(rand() % 2) == 1) { _color = "red"; }
 }
