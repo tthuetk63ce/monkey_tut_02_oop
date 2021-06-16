@@ -15,8 +15,8 @@ Coronavirus::~Coronavirus() {
 int Coronavirus::getResistance() {
 	return _resistance;
 }
-Coronavirus::Coronavirus(const Coronavirus& Crn) {
-	_dna = Crn._dna; _resistance = Crn._resistance;
+Coronavirus::Coronavirus(const Coronavirus& crn) {
+	_dna = crn._dna; _resistance = crn._resistance;
 };
 void Coronavirus::loadADNInformation() {
 	ifstream input("E:/ATGX.bin");
