@@ -40,13 +40,13 @@ void Patient::doStart(){
 }
 
 void Patient::initResistance() {
-	_Presistance = rand() % 9000 + 1000;
+	_presistance = rand() % 9000 + 1000;
 }
 void Patient::takeMedicine() {
 	list <Coronavirus*>::iterator it = _virusList.begin();
 	list <Coronavirus*> list;
 	while (it != _virusList.end()) {
-		(*it)->reduceResistance(_Presistance);
+		(*it)->reduceResistance(_presistance);
 		if ((*it)->getResistance() <= 0) {
 			_virusList.erase(it++);
 		}
@@ -56,8 +56,8 @@ void Patient::takeMedicine() {
 	}
 	_virusList.merge(list);
 	for (it = _virusList.begin(); it != _virusList.end(); ++it) {
-		_Presistance -= (*it)->getResistance();
-		if (_Presistance <= 0) {
+		_presistance -= (*it)->getResistance();
+		if (_presistance <= 0) {
 			doDie();
 			break;
 		}
