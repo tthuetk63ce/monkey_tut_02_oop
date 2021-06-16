@@ -2,8 +2,8 @@
 #include "AlphaCorona.h"
 
 AlphaCorona() {
-	AlphaCorona::doBorn();
-	AlphaCorona::initResistance();
+	doBorn();
+	initResistance();
 }
 AlphaCorona(string dna, int resistance, string color) {
 	_dna = dna;
@@ -11,7 +11,7 @@ AlphaCorona(string dna, int resistance, string color) {
 	_color = color;
 }
 ~AlphaCorona() {
-	AlphaCorona::doDie();
+	doDie();
 }
 void AlphaCorona::doBorn() {
 	Coronavirus::loadADNInformation()
