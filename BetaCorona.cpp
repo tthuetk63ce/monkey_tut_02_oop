@@ -1,11 +1,11 @@
 #include "BetaCorona.h"
 
 BetaCorona() {
-	BetaCorona::doBorn();
-	BetaCorona::initResistance();
+	doBorn();
+	initResistance();
 };
 ~BetaCorona() {
-	BetaCorona::doDie();
+	doDie();
 };
 BetaCorona(string dna, int resistance, string protein) {
 	_dna = dna;
