@@ -11,7 +11,7 @@ AlphaCorona(string dna, int resistance, string color) {
 	_color = color;
 }
 ~AlphaCorona() {
-	doDie();
+	AlphaCorona::doDie();
 }
 void AlphaCorona::doBorn() {
 	loadADNInformation();
