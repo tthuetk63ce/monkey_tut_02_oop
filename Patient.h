@@ -12,7 +12,7 @@ public:
 	void doDie();
 	string getState();
 protected:
-	int _Presistance;
+	int _presistance;
 	list <Coronavirus*> _virusList;
 	enum _mState { DIE, LIVE };
 	string _state;
