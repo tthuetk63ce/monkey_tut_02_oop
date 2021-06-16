@@ -5,6 +5,7 @@ BetaCorona() {
 	BetaCorona::initResistance();
 };
 ~BetaCorona() {
+	BetaCorona::doDie();
 };
 BetaCorona(string dna, int resistance, string protein) {
 	_dna = dna;
