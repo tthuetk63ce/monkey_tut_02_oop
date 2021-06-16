@@ -27,6 +27,6 @@ void Coronavirus::loadADNInformation() {
 	}
 	input.close();
 };
-void Coronavirus::reduceResistance(int i_medicineResistance) {
-	_resistance -= i_medicineResistance;
+void Coronavirus::reduceResistance(int _iMedicineResistance) {
+	_resistance -= _iMedicineResistance;
 }
