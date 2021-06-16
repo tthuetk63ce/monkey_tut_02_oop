@@ -25,9 +25,7 @@ void BetaCorona::initResistance() {
 	if (_protein == "NS5") _resistance = rand() % 30 + 21;
 }
 void BetaCorona::doDie() {
-	_resistance = 0;
-	_protein = "";
-	_dna = "";
+	delete this;
 }
 list<Coronavirus*> BetaCorona::doClone(BetaCorona* Beta) {
 	_listBetaCrn.push_back(Beta);
