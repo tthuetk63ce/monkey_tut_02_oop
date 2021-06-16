@@ -3,11 +3,11 @@
 #include "BetaCorona.h"
 
 Patient() {
-	Patient::doStart();
+	doStart();
 	initResistance();
 }
 ~Patient() {
-	Patient::doDie();
+	doDie();
 };
 
 string Patient::getState() {
