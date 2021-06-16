@@ -1,15 +1,15 @@
 #include "Coronavirus.h"
 
 
-Coronavirus::Coronavirus(string dna, int resistance) {
+Coronavirus(string dna, int resistance) {
 	_dna = dna;
 	_resistance = resistance;
 };
-Coronavirus::Coronavirus() {
+Coronavirus() {
 	_dna = "";
 	_resistance = 0;
 };
-Coronavirus::~Coronavirus() {
+~Coronavirus() {
 	_dna = ""; _resistance = 0;
 };
 int Coronavirus::getResistance() {
