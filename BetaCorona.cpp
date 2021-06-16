@@ -1,12 +1,12 @@
 #include "BetaCorona.h"
 
-BetaCorona::BetaCorona() {
+BetaCorona() {
 	BetaCorona::doBorn();
 	BetaCorona::initResistance();
 };
-BetaCorona::~BetaCorona() {
+~BetaCorona() {
 };
-BetaCorona::BetaCorona(string dna, int resistance, string protein) {
+BetaCorona(string dna, int resistance, string protein) {
 	_dna = dna;
 	_resistance = resistance;
 	_protein = protein;
