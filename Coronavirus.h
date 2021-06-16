@@ -15,7 +15,7 @@ public:
 	Coronavirus(const Coronavirus& Crn) { };
 
 	void loadADNInformation() {};
-	void reduceResistance(int i_medicineResistance) {};
+	void reduceResistance(int _iMedicineResistance) {};
 	int getResistance();
 	virtual void doBorn() = 0;
 	virtual list<Coronavirus*> doClone(Coronavirus* Crn) = 0;
