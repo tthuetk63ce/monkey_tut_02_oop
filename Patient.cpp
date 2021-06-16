@@ -2,10 +2,11 @@
 #include "AlphaCorona.h"
 #include "BetaCorona.h"
 
-Patient::Patient() {
+Patient() {
 	Patient::doStart();
+	initResistance();
 }
-Patient::~Patient() {
+~Patient() {
 	Patient::doDie();
 };
 
@@ -26,13 +27,13 @@ void Patient::doStart(){
 	for (int i = 0;i < rand() % 20 + 10;++i) {
 		if ((rand() % 2 + 1) == 1)
 		{	
-			AlphaCorona* Alpha;
-			_virusList.push_back(Alpha);
+			AlphaCorona* alpha;
+			_virusList.push_back(alpha);
 		};
 		if ((rand() % 2 + 1) == 2)
 		{
-			BetaCorona* Beta;
-			_virusList.push_back(Beta);
+			BetaCorona* beta;
+			_virusList.push_back(beta);
 		};
 	}
 	_state = "ALIVE";
