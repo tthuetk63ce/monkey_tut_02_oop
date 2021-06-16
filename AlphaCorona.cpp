@@ -1,16 +1,16 @@
 
 #include "AlphaCorona.h"
 
-AlphaCorona::AlphaCorona() {
+AlphaCorona() {
 	AlphaCorona::doBorn();
 	AlphaCorona::initResistance();
 }
-AlphaCorona::AlphaCorona(string dna, int resistance, string color) {
+AlphaCorona(string dna, int resistance, string color) {
 	_dna = dna;
 	_resistance = resistance;
 	_color = color;
 }
-AlphaCorona::~AlphaCorona() {
+~AlphaCorona() {
 	doDie();
 }
 void AlphaCorona::doBorn() {
